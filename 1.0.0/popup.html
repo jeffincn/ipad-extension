@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>IPhone Reservation Assistant</title>
+    <style>
+        body {
+            min-width: 357px;
+            overflow-x: hidden;
+            background-color:#FFFFFA;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            margin: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            width: 360px;
+        }
+
+        h3 {
+            font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+        }
+
+        li img {
+            float: left;
+            margin: 0 15px 0 0;
+        }
+
+        li p {
+            font: 200 12px/1.5 Georgia, Times New Roman, serif;
+        }
+
+        li {
+            padding: 10px;
+            overflow: auto;
+        }
+
+            li:hover {
+                background: #eee;
+                cursor: pointer;
+            }
+    </style>
+    <script src="jquery-1.10.2.js"></script>
+    <script src="popup.js"></script>
+    <script src="background.js"></script>
+</head>
+<body>
+    <audio id="player" controls style="display:none">
+      <source src="sound/alarm.mp3" type="audio/mpeg">
+    </audio>
+    <div>
+        <ul>
+            <li id="ireserve_ipad_zh_hk">
+                <img src="icons/ipad-air-48.png">
+                <h3>Reservation iPad Page(HK Chinese)</h3>
+            </li>
+            <li id="ireserve_ipad_mini_zh_hk">
+                <img src="icons/ipad-mini-48.png">
+                <h3>Reservation iPad mini Page(HK Chinese)</h3>
+            </li>
+            <li id="page_test">
+                <img src="icons/bulb_48.png">
+                <h3>Page Test</h3>
+                <p>用於檢查當前工具是否正常</p>
+            </li>
+<!--             <li id="ireserve_help">
+                <img src="icons/bulb_48.png">
+                <h3>Help</h3>
+                <p>如需要恊助請到這裏</p>
+            </li> -->
+            <li id="popup_config">
+                <img src="icons/gear_48.png">
+                <h3>Preference</h3>
+                <p>首次使用請先到這裏填好資料</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>CCC Options</title>
+  <!--
+  <script src="BumbleAd.1.0.22.js"></script>
+-->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300italic,400italic,300,500,500italic,700,700italic,900&subset=latin,greek' rel='stylesheet' type='text/css'>
+  <link href="options.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <h2>CCC (Chrome Currency Converter) / Options</h2>
+
+    <div id="donate">
+      If you like this extension and want to support it, click here:
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+    </div>
+
+    <fieldset>
+     <legend>Basic options</legend>
+     <table cellspacing="0">
+       <tr>
+        <th>Base currency</th>
+        <td><select id="currency" name="currency"></select></td>
+      </tr>
+
+
+      <tr>
+        <th>Domains enabled for</th>
+        <td>
+         <label><input type="radio" name="usedomains" /> All domains</label>  <label><input name="usedomains" type="radio"/>Selected domains</label>
+
+         <div id="domains-container">
+          <textarea name="domains" id="domains">
+            amazon.co
+            ebay.
+          </textarea>
+          <small>
+            Extension will scan for location matches for the entries above.
+
+          </small>
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <th>Domains disabled for</th>
+      <td>
+        <label><input type="radio" name="dis-usedomains" /> None</label>  <label><input name="dis-usedomains" type="radio"/>Selected domains</label>
+
+        <div id="dis-domains-container">
+          <textarea name="dis-domains" id="dis-domains"></textarea>
+          <small>
+            Extension will scan for location matches for the entries above.
+          </small>
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+     <th>Mini converter</th>
+     <td>
+      <input type="checkbox" name="enable-mini" id="mini" />
+      <small>Bring it on by pressing <kbd>ALT+SHIFT+CTRL+C</kbd> in any page.</small>
+    </td>
+
+
+  </tr>
+
+
+</table>
+
+</fieldset>
+
+
+<fieldset>
+  <legend>Visual</legend>
+  <table cellspacing="0">
+   <tr>
+    <th>Display icon</th>
+    <td>
+     <input type="checkbox" name="show-icon" id="icon" />
+     <small>Wether to display the icon in the address bar when conversions take place.</small>
+   </td>
+ </tr>
+
+ <tr>
+  <th>Display origin price</th>
+  <td>
+   <input type="checkbox" name="original" id="original" />
+   <small>Checking this will display the prices in their original form in parenthesis.</small>
+ </td>
+
+
+
+ <!-- not for now
+ <tr>
+  <th>Use M, B for millions and billions</th>
+  <td>
+   <input type="checkbox" name="use_mb" id="use_mb" />
+   <small>e.g 1000000 will be displayed as 1M </small>
+ </td>
+
+</tr>
+-->
+
+
+
+<tr>
+  <th>Highlight changes</th>
+  <td>
+   <input type="checkbox" name="highlight" id="highlight" />
+   <small>Checking this will highlight (and fade out) the converted prices.</small>
+ </td>
+
+</tr>
+</table>
+</fieldset>
+
+<fieldset>
+	<legend>Formatting</legend>
+	<table cellspacing="0">
+   <tr>
+    <th>Round prices</th>
+    <td>
+     <select id="round">
+      <option value="0">Never</option>
+      <option value="-1">Always</option>
+      <option value="5">If price >= 5</option>
+      <option value="10">If price >= 10</option>
+      <option value="100">If price >= 100</option>
+      <option value="1000">If price >= 1000</option>
+    </select>
+  </td>
+</tr>
+
+<tr>
+  <th>Always separate price from symbol</th>
+  <td>
+   <input type="checkbox" name="symbol" id="separate-symbol" />
+ </td>
+</tr>
+
+<tr>
+  <th>Decimal separator</th>
+  <td>
+   <select id="format-decimal">
+    <option value="">Auto</option>
+    <option value=",">,</option>
+    <option value=".">.</option>
+  </select>
+</td>
+</tr>
+
+<tr>
+  <th>Thousands separator</th>
+  <td>
+   <input type="checkbox" name="thousands" id="thousands" />
+ </td>
+</tr>
+
+<tr>
+  <th>Symbol position</th>
+  <td>
+   <select id="format-position">
+    <option value="">Auto</option>
+    <option value="left">Left</option>
+    <option value="rigth">Right</option>
+  </select>
+</td>
+</tr>
+
+</table>
+</table>
+</fieldset>
+
+
+<div id="bumbleAd"></div>
+
+  <div id="twitter">
+    <a target="_blank" href="https://twitter.com/phaistonian" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @phaistonian</a> for updates and more.
+  </div>
+
+<footer>
+
+
+  <div style="float: left;">
+    <button  style="font-weight: bold;">Save options</button> <span id="say">Changed</span>
+  </div>
+
+  <div style="float: right;">
+    <address style="margin: 0; margin-top: 6px; color: #6f6f6f; font-size: 11px; font-style: normal;">Currency rates are provided by <a href="http://www.pathfinder.gr/" target="ext">Pathfinder</a>.</address>
+  </div>
+</footer>
+
+</div>
+
+<script src="currencies.js"></script>
+<script src="options.js"></script>
+
+</body>
+</html>

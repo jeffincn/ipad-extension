@@ -1,0 +1,29 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "ccc.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_idle"
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "Automatically convert in-page prices to the selected currency using current rates.",
+   "icons": {
+      "128": "icons/128.png",
+      "48": "icons/48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCkP8fblHMekbhsory/8Q6/wB24IGfN2HjVU7zEGWh0mim9wZCp4136BV1yAoSzUn6s82ctvmNqYlPwexdjP1vcD/6HXc/vYRSLB+3TvitMBc5vmMoGnvHU8Lgs7MO9PJHMYgOPZCBMz0AXgedRBjLtP5ByIsr0HG2Q5pn+SVH5MQIDAQAB",
+   "manifest_version": 2,
+   "name": "Chrome Currency Converter",
+   "options_page": "options.html",
+   "page_action": {
+      "default_icon": "icons/19.png",
+      "default_title": "Chrome Currency Converter"
+   },
+   "permissions": [ "tabs", "http://chrome.dev.pathfinder.gr/*", "http://chrome.pathfinder.gr/*", "notifications" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "4.3.1",
+   "web_accessible_resources": [ "iframe.html" ]
+}

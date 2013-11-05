@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title>Chrome Currency Converter - Mini converter</title>
+  <link href="iframe.css" rel="stylesheet">
+</head>
+
+<body>
+	<h2>Chrome Currency Converter's Mini Converter</h2>
+
+		<div>
+			<input autofocus id="amount" type="text" placeholder="Amount" autocomplete="false"/>
+			<select id="currency"></select>
+		</div>
+		<div>
+			<button id="button">Convert</button>
+			<strong id="result">&nbsp;</strong>
+		</div>
+
+	<p>
+	Enter amount then press ENTER (or click the button) to convert it to the base currency.</p>
+
+	<p>
+	You can close this mini converter by pressing ESCape. To change the target (base) currency, <a href="options.html" target="_blank" title="Options">click here</a> for options.</p>
+  <script src="currencies.js"></script>
+  <script src="iframe.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+{
+   "app_description": {
+      "message": "iPad\u8A02\u6A5F\u52A9\u624B"
+   },
+   "app_name": {
+      "message": "iPad\u8A02\u6A5F\u52A9\u624B"
+   },
+   "option_page_button_clear": {
+      "message": "\u6E05\u9664\u6240\u6709\u9078\u9805"
+   },
+   "option_page_button_clear_db": {
+      "message": "\u6E05\u9664\u5B58\u8CA8\u8CC7\u6599\u5EAB"
+   },
+   "option_page_button_save": {
+      "message": "\u5132\u5B58\u9078\u9805"
+   },
+   "option_page_field_auto_stock_check": {
+      "message": "\u81EA\u52D5\u5B58\u8CA8\u6AA2\u67E5\u529F\u80FD"
+   },
+   "option_page_field_auto_stock_check_alarm": {
+      "message": "有新货时启用提示音?"
+   },
+   "option_page_field_ipad_auto_stock_check_alarm": {
+      "message": "启用iPad通知?"
+   },
+   "option_page_field_ipad_mini_auto_stock_check_alarm": {
+      "message": "启用iPad mini通知?"
+   },
+   "option_page_field_auto_stock_check_available_only": {
+      "message": "\u81EA\u52D5\u5B58\u8CA8\u6AA2\u67E5\u7576\u6709\u8CA8\u6642\u624D\u9865\u793A"
+   },
+   "option_page_field_auto_stock_check_page": {
+      "message": "\u7576\u6709\u8CA8\u6642\u81EA\u52D5\u6253\u958B\u9810\u8A02\u7DB2\u9801"
+   },
+   "option_page_field_auto_stock_check_time": {
+      "message": "定时检查间隔时间"
+   },
+   "option_page_field_auto_stock_check_time_text": {
+      "message": "\u5206\u937E\u6AA2\u67E5\u4E00\u6B21 (\u5C0F\u65BC1\u5206\u937E\u8ACB\u8F38\u5165\u5C0F\u6578)"
+   },
+   "option_page_field_autofill": {
+      "message": "\u81EA\u52D5\u586B\u8868\u529F\u80FD"
+   },
+   "option_page_field_capacity": {
+      "message": "\u9078\u64C7\u578B\u865F\uFF1A"
+   },
+   "option_page_field_color": {
+      "message": "\u9078\u64C7\u984F\u8272\uFF1A "
+   },
+   "option_page_field_date": {
+      "message": "\u9078\u64C7\u65E5\u671F\uFF1A"
+   },
+   "option_page_field_email": {
+      "message": "\u96FB\u90F5"
+   },
+   "option_page_field_firstname": {
+      "message": "\u59D3\u6C0F"
+   },
+   "option_page_field_govtid": {
+      "message": "\u7531\u653F\u5E9C\u7C3D\u767C\u9644\u5E36\u7167\u7247\u7684\u6709\u6548\u8EAB\u5206\u8B49\u660E\u6587\u4EF6"
+   },
+   "option_page_field_lastname": {
+      "message": "\u540D\u5B57"
+   },
+   "option_page_field_mobile": {
+      "message": "\u624B\u63D0\u96FB\u8A71\u865F\u78BC"
+   },
+   "option_page_field_product": {
+      "message": "\u7522\u54C1\u540D\u7A31\uFF1A"
+   },
+   "option_page_field_qty": {
+      "message": "\u6578\u91CF\uFF1A"
+   },
+   "option_page_field_reservation_code": {
+      "message": "\u9810\u8A02\u4EE3\u78BC"
+   },
+   "option_page_field_store": {
+      "message": "\u9078\u64C7\u96F6\u552E\u5E97\uFF1A"
+   },
+   "option_page_header_title": {
+      "message": "iPad\u8A02\u6A5F\u52A9\u624B\u8A2D\u5B9A\u9078\u9805:"
+   },
+   "option_page_title": {
+      "message": "iPad\u8A02\u6A5F\u52A9\u624B\u8A2D\u5B9A\u9078\u9805:"
+   },
+   "page_test_link":{
+      "message": "頁面測試...(注意有警報)"
+   },
+   "popup_list_config_link": {
+      "message": "\u8A2D\u5B9AiPad\u8A02\u6A5F\u52A9\u624B"
+   },
+   "popup_list_en_hk_link": {
+      "message": "\u9032\u5165\u9810\u8A02\u7DB2\u9801(\u9999\u6E2F\u82F1\u6587)"
+   },
+   "popup_list_help_link": {
+      "message": "\u4F7F\u7528\u8AAA\u660E"
+   },
+   "popup_list_stock_link": {
+      "message": "\u5B58\u8CA8\u6AA2\u67E5\u6B77\u53F2"
+   },
+   "popup_list_zh_cn_link": {
+      "message": "\u9032\u5165\u9810\u8A02\u7DB2\u9801(\u4E2D\u570B)"
+   },
+   "popup_list_zh_hk_link": {
+      "message": "\u9032\u5165\u9810\u8A02\u7DB2\u9801(\u9999\u6E2F\u4E2D\u6587)"
+   },
+   "popup_ipad_list_zh_cn_link":{
+      "message": "\u9032\u5165iPad\u9810\u8A02\u7DB2\u9801(\u9999\u6E2F\u4E2D\u6587)"
+   },
+   "popup_ipad_mini_list_zh_cn_link":{
+      "message": "\u9032\u5165iPad mini\u9810\u8A02\u7DB2\u9801(\u9999\u6E2F\u4E2D\u6587)"
+   },
+   "popup_page_header_title": {
+      "message": "iPad\u8A02\u6A5F\u52A9\u624B"
+   },
+   "text_causeway_bay": {
+      "message": "\u9999\u6E2F, Causeway Bay"
+   },
+   "text_color_gold": {
+      "message": "\u91D1\u8272"
+   },
+   "text_color_gray": {
+      "message": "\u592A\u7A7A\u7070"
+   },
+   "text_color_silver": {
+      "message": "\u9280\u8272"
+   },
+   "text_date_10am_to_11am": {
+      "message": "10:00 \u4E0A\u5348 - 11:00 \u4E0A\u5348"
+   },
+   "text_date_11am_to_12pm": {
+      "message": "11:00 \u4E0A\u5348 - 12:00 \u4E0B\u5348"
+   },
+   "text_date_12pm_to_1pm": {
+      "message": "12:00 \u4E0B\u5348 - 1:00 \u4E0B\u5348"
+   },
+   "text_date_1pm_to_2pm": {
+      "message": "1:00 \u4E0B\u5348 - 2:00 \u4E0B\u5348"
+   },
+   "text_date_2pm_to_3pm": {
+      "message": "2:00 \u4E0B\u5348 - 3:00 \u4E0B\u5348"
+   },
+   "text_date_3pm_to_4pm": {
+      "message": "3:00 \u4E0B\u5348 - 4:00 \u4E0B\u5348"
+   },
+   "text_date_4pm_to_5pm": {
+      "message": "4:00 \u4E0B\u5348 - 5:00 \u4E0B\u5348"
+   },
+   "text_date_5pm_to_6pm": {
+      "message": "5:00 \u4E0B\u5348 - 6:00 \u4E0B\u5348"
+   },
+   "text_date_6pm_to_7pm": {
+      "message": "6:00 \u4E0B\u5348 - 7:00 \u4E0B\u5348"
+   },
+   "text_date_7pm_to_8pm": {
+      "message": "7:00 \u4E0B\u5348 - 8:00 \u4E0B\u5348"
+   },
+   "text_date_8pm_to_9pm": {
+      "message": "8:00 \u4E0B\u5348 - 9:00 \u4E0B\u5348"
+   },
+   "text_date_9am_to_10am": {
+      "message": "9:00 \u4E0A\u5348 - 10:00 \u4E0A\u5348"
+   },
+   "text_date_random": {
+      "message": "\u96FB\u8166\u96A8\u6A5F\u9078\u64C7"
+   },
+   "text_disable": {
+      "message": "\u95DC\u9589"
+   },
+   "text_enable": {
+      "message": "\u958B\u5553"
+   },
+   "text_festival_walk": {
+      "message": "\u9999\u6E2F, Festival Walk"
+   },
+   "text_ifc": {
+      "message": "\u9999\u6E2F, ifc mall"
+   },
+   "text_unlock_16gb": {
+      "message": "16GB \u5DF2\u89E3\u9396\u53CA\u4E0D\u9644\u5E36\u5408\u7D04"
+   },
+   "text_unlock_32gb": {
+      "message": "32GB \u5DF2\u89E3\u9396\u53CA\u4E0D\u9644\u5E36\u5408\u7D04"
+   },
+   "text_unlock_64gb": {
+      "message": "64GB \u5DF2\u89E3\u9396\u53CA\u4E0D\u9644\u5E36\u5408\u7D04"
+   }
+}

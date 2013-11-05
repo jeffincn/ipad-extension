@@ -1,0 +1,61 @@
+body {
+  font: normal 12px arial, serif;
+  width: 325px;
+  color: #333;
+  text-align: center;
+  background: rgba(255,255,255, 1);
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+}
+strong {
+  font-size: 14px;
+  color: green;
+  float: right;
+  margin-top: 5px;
+  font-weight: bold;
+}
+input,
+button {
+  float: left;
+}
+
+select {
+  float: right;
+
+}
+
+input, button, select {
+  margin: 0;
+}
+
+div {
+  margin: 5px 0;
+}
+
+#amount {
+  width: 5em;
+}
+h2 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #6f6f6f;
+  margin: 0 0 5px 0;
+}
+div {
+  overflow: hidden;
+
+  }
+
+p {
+  font-size: 11px;
+  text-align: left;
+  color: #999;
+}
+a {
+  color: #999;
+
+}
+button {
+  font-weight:bold;
+}

@@ -1,0 +1,169 @@
+﻿<!doctype html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Configuration Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font: 100% normal Arial, Helvetica, sans-serif;
+            background: #161712;
+        }
+
+        form, input, select, textarea {
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+        }
+
+        div.box {
+            margin: 0 auto;
+            width: 620px;
+            background: #222222;
+            position: relative;
+            top: 50px;
+            border: 1px solid #262626;
+        }
+
+            div.box h1 {
+                color: #ffffff;
+                font-size: 18px;
+                text-transform: uppercase;
+                padding: 5px 0 5px 5px;
+                border-bottom: 1px solid #161712;
+                border-top: 1px solid #161712;
+            }
+
+            div.box label {
+                width: 100%;
+                display: block;
+                background: #1C1C1C;
+                border-top: 1px solid #262626;
+                border-bottom: 1px solid #161712;
+                padding: 10px 0 10px 0;
+            }
+
+                div.box label span {
+                    display: block;
+                    color: #bbbbbb;
+                    font-size: 12px;
+                    float: left;
+                    width: 150px;
+                    text-align: right;
+                    padding: 5px 20px 0 0;
+                }
+
+                #option_page_field_auto_stock_check_time_text {
+                    display: inline;
+                    float: none;
+                }
+                
+            div.box  .checkbox_label {
+                width:auto;
+            }
+
+            div.box .input_text {
+                padding: 10px 10px;
+                width: 200px;
+                background: #262626;
+                border-bottom: 1px double #171717;
+                border-top: 1px double #171717;
+                border-left: 1px double #333333;
+                border-right: 1px double #333333;
+            }
+            
+            div.box .input_select {
+                padding: 10px 10px;
+                width: 220px;
+                background: #262626;
+                border-bottom: 1px double #171717;
+                border-top: 1px double #171717;
+                border-left: 1px double #333333;
+                border-right: 1px double #333333;
+            }
+
+            div.box .message {
+                padding: 7px 7px;
+                width: 350px;
+                background: #262626;
+                border-bottom: 1px double #171717;
+                border-top: 1px double #171717;
+                border-left: 1px double #333333;
+                border-right: 1px double #333333;
+                overflow: hidden;
+                height: 150px;
+            }
+
+            div.box .button {
+                margin: 0 0 10px 0;
+                padding: 4px 7px;
+                background: #CC0000;
+                border: 0px;
+                position: relative;
+                top: 10px;
+                left: 120px;
+                width: 120px;
+                border-bottom: 1px double #660000;
+                border-top: 1px double #660000;
+                border-left: 1px double #FF0033;
+                border-right: 1px double #FF0033;
+            }
+
+            div.box .button_area {
+                width: 100%;
+                display: block;
+                background: #1C1C1C;
+                border-top: 1px solid #262626;
+                border-bottom: 1px solid #161712;
+                padding: 10px 0 10px 0;
+            }
+    </style>
+    <script src="jquery-1.10.2.js"></script>
+    <script src="options.js"></script>
+</head>
+<body>
+    <form>
+        <div class="box">
+            <h1 id="option_page_title">Configuration Page</h1>
+            <label>
+                <span id="option_page_field_auto_stock_check_time">stock auto check time</span>
+                <input type="text" class="input_text" name="stock_auto_check_time" id="stock_auto_check_time" />
+                </select>
+                <span id="option_page_field_auto_stock_check_time_text">minutes per check</span>
+            </label>
+            <label>
+                <span id="option_page_field_ipad_auto_stock_check_alarm">auto alarm</span>
+                <select class="input_select" id="ipad_auto_check_alarm">
+                    <option value="true">開啓</option>
+                    <option value="false">關閉</option>
+                </select>
+            </label>
+            <label>
+                <span id="option_page_field_ipad_mini_auto_stock_check_alarm">auto alarm</span>
+                <select class="input_select" id="ipad_mini_auto_check_alarm">
+                    <option value="true">開啓</option>
+                    <option value="false">關閉</option>
+                </select>
+            </label>
+            <label>
+                <span id="option_page_field_auto_stock_check_alarm">auto alarm</span>
+                <select class="input_select" id="stock_auto_check_alarm">
+                    <option value="true">開啓</option>
+                    <option value="false">關閉</option>
+                </select>
+            </label>
+            <div class="button_area">
+                <input type="button" class="button" id="save" name="save" value="Save" />
+                <input type="button" class="button" id="clear" name="clear" value="Clear" />
+                <input type="button" class="button" id="remove_db" name="remove_db" value="Clear Database" />
+            </div>
+            <label id="status"></label>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>什么值得买</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<link rel="stylesheet" href="../css/bootstrap.css" />
+<script type="text/javascript" src="../js/inc/jquery.js"></script>
+<script type="text/javascript" src="../js/inc/jquery.url.js"></script>
+<script type="text/javascript" src="../js/inc/jquery.validate.js"></script>
+<script type="text/javascript" src="../js/inc/bootstrap.js"></script>
+<script type="text/javascript" src="../js/inc/smzdm.js"></script>
+<script type="text/javascript" src="../js/popup.js"></script>
+</head>
+<body>
+    <div class="container" style="width:500px;padding:10px 5px 0px">
+    	<div class="row">
+            <div id="row1">
+                <a id="login">登录</a>
+                <span id="line" style="color:#999;padding:0px 3px;">|</span> 
+                <a id="checklogin" href="http://www.smzdm.com/register.php" target="_blank">注册</a>
+            </div>
+    		<div class="rightCorner">
+    			<a href="http://www.smzdm.com" target="_blank">网站首页</a>
+                <span style="color:#999;padding:0px 3px;">|</span> 
+    			<a href="options.html" target="_blank">插件设置</a>
+                <a class="b3" href="http://www.smzdm.com/submit" target="_blank">我要爆料</a>
+    		</div>
+    	</div>
+        <a class="span13" href="http://www.smzdm.com" target="_blank"></a>
+    	<ul id="version_tabs" class="nav nav-tabs">
+    		<li class="active"><a href="#all_notify_content" data-toggle="tab" id="all_notify_tab">所有提醒(0/0)</a></li>
+    		<li><a href="#fav_notify_content" data-toggle="tab" id="fav_notify_tab">我的收藏</a></li>
+            <li class="notice" id="notice">今天有<span id="notice_num"></span>条精选优惠信息</li>
+    	</ul>
+    	<div class="tab-content">
+    		<div class="tab-pane fade active in" style="height:430px;" id="all_notify_content">
+    			<div id="all_notify" style="height:420px;overflow-y:scroll;"></div>
+                <div class="footer">
+                    <a href="http://www.smzdm.com" target="_blank" style="float:right;">点击查看更多...</a>
+                    <button class="btn-mini" style="margin:5px;" id="all_notify_remove"><i class="icon-remove"></i>全部删除</button>
+                </div>
+    		</div>
+    		<div class="tab-pane fade" style="height:430px;" id="fav_notify_content">
+    			<div id="fav_notify" style="height:420px;overflow-y:scroll;"></div>
+                <div class="footer">
+                    <a href="http://www.smzdm.com" target="_blank" style="float:right;">点击查看更多...</a>
+                </div>
+    		</div>
+    		<div class="tab-pane fade" id="baoliao">
+    			<form id="baoliao_form" class="form-horizontal" method="get" action="">
+				<fieldset>
+					<div class="control-group">
+						<label class="control-label" for="b2c_name">商城名称</label>
+						<div class="controls">
+							<input type="text" class="input-xlarge required" maxlength="100" name="b2c_name" id="b2c_name">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="item_name">商品名称+价格</label>
+						<div class="controls">
+							<input type="text" class="input-xlarge required" maxlength="200" name="item_name" id="item_name">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="buy_link">购买链接</label>
+						<div class="controls">
+							<input type="text" class="input-xlarge required" maxlength="1000" name="buy_link" id="buy_link">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="info_source">信息来源</label>
+						<div class="controls">
+        				<div class="btn-group span4" data-toggle="buttons-radio" data-default="on" data-toggle-name="noti_switch" id="info_source">
+        					<button class="btn btn-primary active" value="on">在B2C网站看到</button>
+        					<button class="btn btn-primary" value="off">在第三方网站看到</button>
+        				</div>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="ref_reason">推荐理由</label>
+						<div class="controls">
+							<textarea class="input-xlarge required" marxlength="4000" name="ref_reason" id="ref_reason" rows="6" placeholder="买过、用过、研究过的网友可输入推荐理由，不建议网友直接粘贴商品介绍。我们将根据推荐理由的丰富和原创程度及爆料顺序确定唯一的爆料人。有效爆料将纳入未来的积分计划。"></textarea>
+						</div>
+					</div>
+					<button type="submit" data-complete-text="爆料成功！" data-loading-text="发送中..." class="btn btn-primary submit" style="margin-left:100px" id="button_baoliao_send">发送</button>
+				</fieldset>
+    			</form>
+    		</div>
+    	</div>
+        <div id="alert" class="modal fade alert" style="width:300px;margin:0px;left:20%;display:none;">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal">×</a>
+                <h3>小提示！</h3>
+            </div>
+            <div id="alertmes" class="modal-body"></div>
+        </div>
+        <div id="logindiv" class="modal fade login" style="display:none;top:20%">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal">×</a>
+            </div>
+            <div class="mes"><span id="mes"></span></div>
+            <form id="loginform" method="post" action="" novalidate="novalidate" class="form-horizontal">
+                <div class="control-group">
+                    <label class="control-label">用户名</label>
+                    <div class="controls">
+                        <input name="user" placeholder="请输入您的账号" class="required" tabindex="1" />
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">密码</label>
+                    <div class="controls">
+                        <input name="password" type="password" placeholder="请输入您的密码" class="required" tabindex="2" />
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label"></label>
+                    <div class="controls">
+                        <input type="checkbox" value="1" id="savelogin" style="width:30px;vertical-align:middle;" checked />两周内自动登录
+                        <span style="padding-left:20px;">没有账号？<a id="register">快速注册</a></span><br />
+                    </div>
+                </div>
+                <button id="loginbutton" type="submit" data-complete-text="登录成功！" data-loading-text="登录中..." data-def-text="登 录" class="btn btn-primary submit">登 录</button>
+                    <div style="width:79%;padding:20px 0 0 60px;color:#ea5c58;text-align:justify;text-justify:inter-ideograph">注：由于Chrome限制，目前本插件不支持联合登录功能。联合登录用户，请登录什么值得买网站后<a href="http://www.smzdm.com/user/connect/" target="_blank" style="color:#ea5c58;font-weight:700">绑定网站ID</a>，并以网站ID登录插件。
+</div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
