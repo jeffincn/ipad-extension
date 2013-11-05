@@ -94,9 +94,9 @@ function caTimerListener(isTest) {
                 );
                 notify.show();
                 isHas = true;
-                notify.ondisplay = function(){
-                    setTimeout(notify.close, 3000);
-                }
+                // notify.ondisplay = function(){
+                //     setTimeout(notify.close, 3000);
+                // }
                 playAudio();
             }
             if(isHas){
